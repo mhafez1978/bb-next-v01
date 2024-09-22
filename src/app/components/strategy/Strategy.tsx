@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 const Strategy: React.FC = () => {
   return (
@@ -135,7 +135,13 @@ const Strategy: React.FC = () => {
 
 export default Strategy;
 
-const ServiceCard = ({ icon, title, details }) => {
+interface ServiceCardProps {
+  icon: ReactNode;
+  title: string;
+  details: string;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, details }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-5/12">
       <div className="mb-8 flex md:block lg:mb-[70px] lg:flex 2xl:px-4">

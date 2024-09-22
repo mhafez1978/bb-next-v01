@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import React, { ReactNode } from "react";
 
 const Footer = () => {
   return (
@@ -8,9 +9,11 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-2/3 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <a href="/#" className="mb-6 inline-block max-w-[160px]">
-                <img
+                <Image
                   src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
                   alt="logo"
+                  width={900}
+                  height={800}
                   className="max-w-full"
                 />
               </a>
@@ -106,9 +109,11 @@ const Footer = () => {
                 className="mb-8 flex items-center text-gray-7 hover:text-white"
               >
                 <div className="mr-5 w-full max-w-[70px] overflow-hidden rounded">
-                  <img
+                  <Image
                     src="https://cdn.tailgrids.com/2.0/image/application/images/footers/footer-04/blog-01.jpg"
                     alt="image"
+                    width={900}
+                    height={800}
                     className="w-full"
                   />
                 </div>
@@ -121,7 +126,7 @@ const Footer = () => {
                 className="mb-8 flex items-center text-gray-7 hover:text-white"
               >
                 <div className="mr-5 w-full max-w-[70px] overflow-hidden rounded">
-                  <img
+                  <Image
                     src="https://cdn.tailgrids.com/2.0/image/application/images/footers/footer-04/blog-02.jpg"
                     alt="image"
                     className="w-full"
@@ -482,7 +487,12 @@ const Footer = () => {
 
 export default Footer;
 
-const LinkGroup = ({ children, header }) => {
+interface LinkGroupProps {
+  children: ReactNode;
+  header: string;
+}
+
+const LinkGroup: React.FC<LinkGroupProps> = ({ children, header }) => {
   return (
     <div className="w-full px-4 sm:w-1/2 lg:w-3/12 xl:w-2/12">
       <div className="mb-10 w-full">
@@ -493,7 +503,12 @@ const LinkGroup = ({ children, header }) => {
   );
 };
 
-const NavLink = ({ label, link }) => {
+interface NavLinkProps {
+  label: string;
+  link: string;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ label, link }) => {
   return (
     <li>
       <a
@@ -506,7 +521,7 @@ const NavLink = ({ label, link }) => {
   );
 };
 
-const BottomNavLink = ({ label, link }) => {
+const BottomNavLink: React.FC<NavLinkProps> = ({ label, link }) => {
   return (
     <a
       href={link}

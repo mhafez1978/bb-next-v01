@@ -11,7 +11,7 @@ const Accomplishments = () => {
         </h2>
         <p className="mb-10 text-center text-lg px-4 lg:px-0">
           Every web design project is a tailored combination of marketing
-          services designed to drive your brand's growth.
+          services designed to drive your brand&apos;s growth.
         </p>
         <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           <div className="flex flex-col-reverse items-center justify-center h-auto gap-4 px-4 pt-6 lg:pt-0">

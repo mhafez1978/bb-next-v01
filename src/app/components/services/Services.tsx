@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
 
@@ -114,7 +115,7 @@ const SingleCard = ({
     <div className="w-[450px] min-h-[280px] px-4 md:w-1/2 lg:w-1/3">
       <div className="mb-8 h-full rounded-lg bg-white p-4 shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card flex flex-col">
         <div className="mb-6 w-full overflow-hidden rounded-md">
-          <img src={image} alt="card image" />
+          <Image src={image} alt="card image" width={95} height={95} />
         </div>
         <div className="flex-grow px-[10px]">
           <h3>
