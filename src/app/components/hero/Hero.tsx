@@ -5,6 +5,7 @@ import "./Hero.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Modal from "../modal/Modal";
 const Hero = () => {
   return (
     <>
@@ -19,9 +20,10 @@ const Hero = () => {
               tailored online marketing campaigns, and targeted ads.
             </p>
             <div className="w-full flex flex-row justify-center items-center gap-4 lg:justify-start">
-              <button className="border-2 border-red-300 py-4 px-10 rounded-xl text-lg font-black bg-red-500 text-white hover:bg-lime-600 hover:border-green-400">
+              {/* <button className="border-2 border-red-300 py-4 px-10 rounded-xl text-lg font-black bg-red-500 text-white hover:bg-lime-600 hover:border-green-400">
                 Get Started Today
-              </button>
+              </button> */}
+              <Modal />
               <button className="py-4 rounded-xl text-lg font-black hover:text-lime-600">
                 Discover Our Services
               </button>

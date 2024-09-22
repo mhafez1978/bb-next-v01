@@ -12,8 +12,8 @@ const Footer = () => {
                 <Image
                   src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
                   alt="logo"
-                  width={900}
-                  height={800}
+                  width={400}
+                  height={140}
                   className="max-w-full"
                 />
               </a>
@@ -112,8 +112,8 @@ const Footer = () => {
                   <Image
                     src="https://cdn.tailgrids.com/2.0/image/application/images/footers/footer-04/blog-01.jpg"
                     alt="image"
-                    width={900}
-                    height={800}
+                    width={300}
+                    height={150}
                     className="w-full"
                   />
                 </div>
@@ -129,6 +129,8 @@ const Footer = () => {
                   <Image
                     src="https://cdn.tailgrids.com/2.0/image/application/images/footers/footer-04/blog-02.jpg"
                     alt="image"
+                    width={300}
+                    height={150}
                     className="w-full"
                   />
                 </div>

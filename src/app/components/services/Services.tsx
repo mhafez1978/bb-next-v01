@@ -6,8 +6,7 @@ import { MdDoubleArrow } from "react-icons/md";
 const Card = () => {
   const ServicesData = [
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/Marketing-losangeles.png",
+      image: "/Marketing-losangeles.png",
       CardTitle: "Online Marketing",
       titleHref: "/online-marketing",
       CardDescription:
@@ -16,8 +15,7 @@ const Card = () => {
       LinkHref: "/online-marketing",
     },
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/SEO-Losangeles.png",
+      image: "/SEO-Losangeles.png",
       CardTitle: "Search Engine Optimization",
       titleHref: "/search-engine-optimization",
       CardDescription:
@@ -26,8 +24,7 @@ const Card = () => {
       LinkHref: "/search-engine-optimization",
     },
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/web-design-agency-losangeles.png",
+      image: "/web-design-agency-losangeles.png",
       CardTitle: "Web Design",
       titleHref: "/website-design-and-development",
       CardDescription:
@@ -36,8 +33,7 @@ const Card = () => {
       LinkHref: "/website-design-and-development",
     },
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/Content-marketing-losangeles.png",
+      image: "/Content-marketing-losangeles.png",
       CardTitle: "Content Marketing",
       titleHref: "/content-marketing",
       CardDescription:
@@ -46,8 +42,7 @@ const Card = () => {
       LinkHref: "/content-marketing",
     },
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/Branding-losangeles.png",
+      image: "/Branding-losangeles.png",
       CardTitle: "Branding & Logo Design",
       titleHref: "/business-branding",
       CardDescription:
@@ -56,8 +51,7 @@ const Card = () => {
       LinkHref: "/business-branding",
     },
     {
-      image:
-        "https://madmindstudios.com/wp-content/uploads/2023/11/losangeles-website-maintenance.png",
+      image: "/losangeles-website-maintenance.png",
       CardTitle: "Website Maintenance",
       titleHref: "/website-support",
       CardDescription:

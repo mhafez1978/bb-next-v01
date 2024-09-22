@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 
 // Regular expressions for validation
@@ -111,14 +112,22 @@ const Modal = () => {
     <>
       <button
         onClick={() => setModalOpen(true)}
-        className="w-[240px] bg-blue-600 text-white outline px-12 py-4 rounded-md hover:bg-blue-500"
+        className="w-[240px] bg-red-600 text-white outline px-10 py-4 rounded-md hover:bg-emerald-500"
       >
         Get Started Today
       </button>
 
       {modalOpen && (
         <div className="fixed left-0 top-0 flex h-full min-h-screen w-full items-center justify-center bg-black/90 px-4 py-5 z-50">
-          <div className="w-[60vw] h-[60vh] rounded-2xl bg-white p-8 text-center shadow-xl overflow-auto">
+          <div className="relative w-[60vw] h-[60vh] rounded-2xl bg-white p-8 text-center shadow-xl overflow-auto">
+            <div className=" absolute top-4 right-4 w-full text-right">
+              <Button
+                onClick={() => setModalOpen(false)}
+                className="text-2xl font-black"
+              >
+                X
+              </Button>
+            </div>
             {step <= 8 && (
               <>
                 <h3 className="mb-6 text-xl font-semibold text-dark">
